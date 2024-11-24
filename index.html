@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple girl </title>
+    <link rel="icon" type="image/png" href="./icon2.png">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .carousel-container {
+\           height: auto;
+            width: 80%;
+            max-width: 80vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+            position: relative;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+		.carousel-images img {
+		    width: 100%; /* Scale images to the width of the container */
+		    height: 100%; /* Maintain aspect ratio */
+		    object-fit: contain; /* Ensure images are not cut off */
+		    flex-shrink: 0;
+		}
+
+        .carousel-button {
+		    position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    background: none; /* Remove background */
+		    color: #333; /* Text color */
+		    border: none; /* Remove border */
+		    font-size: 20px; /* Adjust font size for text */
+		    font-family: 'Courier New', Courier, monospace; /* Ensure consistent font */
+		    cursor: pointer; /* Maintain clickable pointer */
+		    z-index: 1; /* Keep buttons on top of images */
+		}
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        .carousel-button:hover {
+            color: #555;
+        }
+
+		.credits {
+			display: block;
+		    width: 80%; /* Same width as the carousel */
+		    padding: 20px;
+		    margin: 20px auto 0; /* Space above the credits */
+		    text-align: center; /* Center-align the text */
+		}
+
+        .credits p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        footer .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 100%;
+        }
+
+		/* Mobile Styling */
+		@media (max-width: 768px) {
+		    body {
+		        font-size: 16px; /* Ensure consistent font size for mobile */
+		    }
+		    .carousel-container {
+		        width: 90%; /* Slightly larger container on smaller screens */
+		        aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+		    }
+		    .carousel-images img {
+		        max-width: 100%; /* Ensure images fit smaller screens */
+		        max-height: 100%;
+		        object-fit: contain; /* Prevent images from being cut off */
+		    }
+		    footer .links {
+		        gap: 5px; /* Reduce spacing */
+		    }
+		    .carousel-button {
+		        font-size: 20px; /* Maintain consistent button size */
+		    }
+		}
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="./banner.png" alt="apple girl zine" />
+    </a>
+</header>
+
+<main class="main-container">
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <img src="./reduced/cover.png" alt="cover">
+            <img src="./reduced/credits.png" alt="credits">
+            <img src="./reduced/applegirlcomic1.png" alt="apple girl comic">
+            <img src="./reduced/applegirlcomic2.png" alt="apple girl comic 2">
+            <img src="./reduced/secondwindsummer.png" alt="second-wind summer">
+            <img src="./reduced/quiz.png" alt="quiz">
+            <img src="./reduced/greenday.png" alt="green day">
+            <img src="./reduced/linger.png" alt="linger">
+            <img src="./reduced/grownups.png" alt="grown ups">
+            <img src="./reduced/notebook.png" alt="notebook 09/21/24">
+            <img src="./reduced/indreams.png" alt="in dreams i gush because i must">
+            <img src="./reduced/betweentwotrees.png" alt="between two trees">
+            <img src="./reduced/forlifecontinuing.png" alt="for life continuing">
+            <img src="./reduced/whatscooking.png" alt="what's cooking?">
+            <img src="./reduced/back.png" alt="back">
+        </div>
+        <button class="carousel-button prev"><-</button>
+        <button class="carousel-button next">-></button>
+    </div>
+
+    <div class="credits">
+   		<br>
+   		<p>KYLE ALAAN-NGUYEN</p>
+        <p>CHARLOTTE ALARIE</p>
+        <p>FRANKIE ALARIE</p>
+        <p>ASRIEL (email: <a href="mailto:8asrielxx@gmail.com">8asrielxx@gmail.com</a>)</p>
+        <p>ZOLA BALL</p>
+        <p>SUNNY BELL (ig: <a href="https://www.instagram.com/sunnytbell">@sunnytbell</a>)</p>
+        <p>CHLOE CHA (ig: <a href="https://www.instagram.com/notchloecha">@notchloecha</a>)</p>
+        <p>MIRANDA CHANCE</p>
+        <p>JULIA COSTA</p>
+        <p>AVERY DANIEL (ig: <a href="https://www.instagram.com/averynailedthat">@averynailedthat</a>)</p>
+        <p>MASON ERTEL</p>
+        <p>MADI FENECH</p>
+        <p>THOMAS FRENETTE (ig: <a href="https://www.instagram.com/thomasfrent">@thomasfrent</a>)</p>
+        <p>JONAH GRAY (X: <a href="https://twitter.com/keithCozarts">@keithCozarts</a>)</p>
+        <p>EMILY HALPEN-BUIE</p>
+        <p>KAYDEN HENNIG</p>
+        <p>ELISE HOLBROOK</p>
+        <p>YANNA JASKIELEWICZ</p>
+        <p>KASEN KORSTANJE</p>
+        <p>ALEX KRUEGER</p>
+        <p>KHRISTA KRUEGER</p>
+        <p>ZOE LEE</p>
+        <p>SYLVIE LISS</p>
+        <p>EVELYN LOGAN (ig: <a href="https://www.instagram.com/ev_irl">@ev_irl</a>, URL: <a href="https://ev-irl.com">ev-irl.com</a>)</p>
+        <p>KYRA MEIER</p>
+        <p>BRIANNA MORE</p>
+        <p>LEO MUELLER</p>
+        <p>SOFIA OCCHIPINTI</p>
+        <p>GRACE PERRY-HOWARTH</p>
+        <p>H.A. PORFIRI</p>
+        <p>ZOE SEXTON (ig: <a href="https://www.instagram.com/_samjameswrites">@_samjameswrites</a>)</p>
+        <p>SIPORA WEST</p>
+        <p>MARGAUX WILKINSON (ig: <a href="https://www.instagram.com/m4r94ux">@m4r94ux</a>)</p>
+        <p>ABBY WYLAND</p>
+        <p>XR</p>
+    </div>
+</main>
+
+<footer>
+    <div class="links">
+        <a href="https://drive.google.com/drive/folders/12feWPHXVXKQmS42ujKgV-NstbkMS7gYL?usp=sharing">access in google drive</a>
+    </div>
+    <p>nov 2024</p>
+</footer>
+</div>
+
+<script>
+const imagesContainer = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    const imageWidth = images[0].clientWidth; // Get the width of one image
+    imagesContainer.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1; // Loop back to last image
+    updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0; // Loop back to first image
+    updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
+</script>
+</body>
+</html>
